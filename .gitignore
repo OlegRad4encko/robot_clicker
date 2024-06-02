@@ -1,0 +1,7 @@
+.idea
+build
+dist
+main.spec
+user_profiles/test1.txt
+user_profiles/test2.txt
+__pycache__

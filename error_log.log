@@ -1,0 +1,6 @@
+2024-05-31 21:13:26,513 - ERROR - An error occurred in the main loop
+Traceback (most recent call last):
+  File "D:\PyProjects\HamsterClicker\tapper_v3\.venv\Lib\site-packages\pystray\_win32.py", line 147, in _mainloop
+    r = win32.GetMessage(lpmsg, None, 0, 0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
