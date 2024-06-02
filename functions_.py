@@ -64,3 +64,5 @@ def make_area_taps(X1, Y1, X2, Y2, duration, taps_per_sec):
         click(cord['x'], cord['y'])
         pause(1 / (taps_per_sec + 1))
     print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+
+

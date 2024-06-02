@@ -57,18 +57,16 @@ class TransparentWindow(tk.Tk):
     def set_text1(self, text):
         self.update_idletasks()  # Обновить все геометрии)
         if text['work'] == 0:
-           self.text1.config(fg="red")
-           self.text1.config(text="Rest")
-           self.geometry(f"{self.winfo_reqwidth() + 100}x{self.winfo_reqheight()}")
+            self.text1.config(fg="red")
+            self.text1.config(text="Rest")
+            self.geometry(f"{self.winfo_reqwidth() + 100}x{self.winfo_reqheight()}")
         else:
-           self.text1.config(fg="green")
-           self.text1.config(text="Work")
-           self.geometry(f"650x{self.winfo_reqheight()}")
-
-
+            self.text1.config(fg="green")
+            self.text1.config(text="Work")
+            self.geometry(f"650x{self.winfo_reqheight()}")
 
     def set_text2(self, text):
-        new_text = "Profile: "+text['profile']
+        new_text = "Profile: " + text['profile']
         self.text2.config(text=new_text)
         self.update_idletasks()  # Обновить все геометрии
         if self.text1.cget('text') == 'Rest':
@@ -77,7 +75,7 @@ class TransparentWindow(tk.Tk):
             self.geometry(f"650x{self.winfo_reqheight()}")
 
     def set_text3(self, text):
-        new_text = "Action: "+text['action']
+        new_text = "Action: " + text['action']
         self.text3.config(text=new_text)
         self.update_idletasks()  # Обновить все геометрии
 
@@ -99,7 +97,6 @@ class TransparentWindow(tk.Tk):
                 sys.exit()
 
         self.after(10, self.check_queue)
-
 
 
 def start_gui(queue_profile):
